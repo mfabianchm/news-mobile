@@ -15,6 +15,9 @@
 		58EC754A2C863E0F00D705F8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75492C863E0F00D705F8 /* HomeVC.swift */; };
 		58EC754E2C863E3800D705F8 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC754D2C863E3800D705F8 /* SearchVC.swift */; };
 		58EC75502C863E5800D705F8 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC754F2C863E5800D705F8 /* DetailsVC.swift */; };
+		58EC75552C86414F00D705F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75542C86414F00D705F8 /* NetworkManager.swift */; };
+		58EC75582C86475900D705F8 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75572C86475900D705F8 /* News.swift */; };
+		58EC755A2C86491000D705F8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75592C86491000D705F8 /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		58EC75492C863E0F00D705F8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		58EC754D2C863E3800D705F8 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		58EC754F2C863E5800D705F8 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		58EC75542C86414F00D705F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		58EC75572C86475900D705F8 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		58EC75592C86491000D705F8 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,13 @@
 		58EC75322C86386200D705F8 /* news-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				58EC75412C86386400D705F8 /* Info.plist */,
 				58EC75512C863E6A00D705F8 /* Support */,
 				58EC75532C863E9900D705F8 /* Custom Views */,
 				58EC75522C863E8300D705F8 /* Screens */,
-				58EC75412C86386400D705F8 /* Info.plist */,
+				58EC75562C86415400D705F8 /* Managers */,
+				58EC755B2C86491A00D705F8 /* Models */,
+				58EC755C2C86492700D705F8 /* Utilities */,
 			);
 			path = "news-mobile";
 			sourceTree = "<group>";
@@ -95,6 +104,30 @@
 				58EC75472C863D4700D705F8 /* NewsTabBarController.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		58EC75562C86415400D705F8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				58EC75542C86414F00D705F8 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		58EC755B2C86491A00D705F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58EC75572C86475900D705F8 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58EC755C2C86492700D705F8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				58EC75592C86491000D705F8 /* Error.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +202,12 @@
 			files = (
 				58EC754E2C863E3800D705F8 /* SearchVC.swift in Sources */,
 				58EC754A2C863E0F00D705F8 /* HomeVC.swift in Sources */,
+				58EC75582C86475900D705F8 /* News.swift in Sources */,
 				58EC75342C86386200D705F8 /* AppDelegate.swift in Sources */,
+				58EC75552C86414F00D705F8 /* NetworkManager.swift in Sources */,
 				58EC75502C863E5800D705F8 /* DetailsVC.swift in Sources */,
 				58EC75482C863D4700D705F8 /* NewsTabBarController.swift in Sources */,
+				58EC755A2C86491000D705F8 /* Error.swift in Sources */,
 				58EC75362C86386200D705F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

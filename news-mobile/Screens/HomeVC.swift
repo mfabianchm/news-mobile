@@ -11,8 +11,23 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        getNews()
+    }
+    
+    func getNews() {
+        Task {
+            do {
+                let news = try await NetworkManager.shared.getNews(for: "apple")
+                print(news)
+            } catch {
+                if let customError = error as? CustomError {
+                    print(customError)
+                } else {
+                    print("default error")
+                }
+            }
+            
+        }
     }
     
 
