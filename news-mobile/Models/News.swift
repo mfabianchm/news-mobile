@@ -11,7 +11,13 @@ struct Info: Decodable {
     var articles: [News]
 }
 
-struct News: Decodable {
+struct News: Decodable, Hashable, Identifiable {
+    let id = UUID()
+    
+    private enum CodingKeys : String, CodingKey { case
+        author, title, description, url, urlToImage, publishedAt, content
+    }
+    
     var author: String?
     var title: String?
     var description: String?
