@@ -75,9 +75,12 @@ class DetailsVC: UIViewController {
     }
     
     func updateData() {
+        if let dateString = news.publishedAt {
+            dateLabel.text = String(dateString.prefix(10))
+        }
+        
         titleLabel.text = news.title
         authorNameLabel.text = news.author
-        dateLabel.text = news.publishedAt
         descriptionLabel.text = news.description
         
         guard let imageURL = news.urlToImage else {
@@ -118,7 +121,6 @@ class DetailsVC: UIViewController {
             linkButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
             linkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             linkButton.heightAnchor.constraint(equalToConstant: 40),
-            linkButton.widthAnchor.constraint(equalToConstant: 120),
             
         ])
     }

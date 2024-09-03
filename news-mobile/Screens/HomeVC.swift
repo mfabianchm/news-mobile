@@ -84,6 +84,8 @@ class HomeVC: DataLoadingVC {
             self.news.append(contentsOf: news)
             
             if self.news.isEmpty {
+                let message = "Sorry no news found about this topic."
+                DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
                 return
             }
             self.updateData(on: self.news)

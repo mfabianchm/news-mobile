@@ -39,7 +39,7 @@ class NetworkManager {
         do {
             let news = try decoder.decode(Info.self, from: data)
             
-            var filteredNews = news.articles.filter { item in
+            let filteredNews = news.articles.filter { item in
                 if item.title == "[Removed]" {
                     return false
                 } else {
