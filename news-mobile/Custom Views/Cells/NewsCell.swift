@@ -28,13 +28,13 @@ class NewsCell: UITableViewCell {
     
     
     func set(news: News) {
+        newsTitleLabel.text = news.title
+        newsDecriptionLabel.text = news.description
       
         guard let imageURL = news.urlToImage else {
             return
         }
         newsImageView.downloadImage(fromURL: imageURL)
-        newsTitleLabel.text = news.title
-        newsDecriptionLabel.text = news.description
     }
     
     

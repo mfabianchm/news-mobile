@@ -47,9 +47,9 @@ class HomeVC: DataLoadingVC {
     func configureDataSource() {
         dataSource = UITableViewDiffableDataSource<Section, News>(tableView: tableView) { tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.reuseID, for: indexPath) as! NewsCell
+            print(item)
             cell.set(news: item)
             return cell
-            
         }
     }
         
@@ -101,7 +101,7 @@ extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let news = news[indexPath.row]
         let nextVC = DetailsVC(news: news)
-        
+    
         
         navigationController?.pushViewController(nextVC, animated: true)
     }

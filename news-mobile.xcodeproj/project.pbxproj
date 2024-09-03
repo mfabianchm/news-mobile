@@ -27,6 +27,7 @@
 		58EC756B2C86714300D705F8 /* DataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC756A2C86714300D705F8 /* DataLoadingVC.swift */; };
 		58EC75722C875D0000D705F8 /* NewsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75712C875D0000D705F8 /* NewsTextField.swift */; };
 		58EC75742C875D6800D705F8 /* NewsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75732C875D6800D705F8 /* NewsButton.swift */; };
+		58EC75762C8769C500D705F8 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75752C8769C500D705F8 /* ResultsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		58EC756A2C86714300D705F8 /* DataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingVC.swift; sourceTree = "<group>"; };
 		58EC75712C875D0000D705F8 /* NewsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTextField.swift; sourceTree = "<group>"; };
 		58EC75732C875D6800D705F8 /* NewsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsButton.swift; sourceTree = "<group>"; };
+		58EC75752C8769C500D705F8 /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				58EC75492C863E0F00D705F8 /* HomeVC.swift */,
 				58EC754D2C863E3800D705F8 /* SearchVC.swift */,
 				58EC754F2C863E5800D705F8 /* DetailsVC.swift */,
+				58EC75752C8769C500D705F8 /* ResultsVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -125,8 +128,8 @@
 				58EC756F2C875CB200D705F8 /* ImageView */,
 				58EC756C2C875C9400D705F8 /* Labels */,
 				58EC75702C875CBD00D705F8 /* View Controllers */,
-				58EC75712C875D0000D705F8 /* NewsTextField.swift */,
-				58EC75732C875D6800D705F8 /* NewsButton.swift */,
+				58EC75792C8776C200D705F8 /* TextField */,
+				58EC757A2C8776D200D705F8 /* Buttons */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -203,6 +206,22 @@
 				58EC756A2C86714300D705F8 /* DataLoadingVC.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		58EC75792C8776C200D705F8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				58EC75712C875D0000D705F8 /* NewsTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		58EC757A2C8776D200D705F8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				58EC75732C875D6800D705F8 /* NewsButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +304,7 @@
 				58EC75552C86414F00D705F8 /* NetworkManager.swift in Sources */,
 				58EC75502C863E5800D705F8 /* DetailsVC.swift in Sources */,
 				58EC75692C8668F600D705F8 /* NewsBodyLabel.swift in Sources */,
+				58EC75762C8769C500D705F8 /* ResultsVC.swift in Sources */,
 				58EC75482C863D4700D705F8 /* NewsTabBarController.swift in Sources */,
 				58EC75642C865ECC00D705F8 /* UIView+Ext.swift in Sources */,
 				58EC755A2C86491000D705F8 /* Error.swift in Sources */,

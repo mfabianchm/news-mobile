@@ -41,9 +41,6 @@ class DetailsVC: UIViewController {
         linkButton.backgroundColor = .systemBlue
         linkButton.setTitleColor(.white, for: .normal)
         
-        
-        
-        
         updateData()
         layoutUI()
     }
@@ -63,8 +60,6 @@ class DetailsVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismssVC))
-        navigationItem.rightBarButtonItem = doneButton
     }
     
     func configureScrollView() {

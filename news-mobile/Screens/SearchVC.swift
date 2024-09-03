@@ -72,8 +72,8 @@ class SearchVC: UIViewController {
         
         usernameTextField.resignFirstResponder()
          
-//        let homeVC = HomeVC(news: news)
-//        navigationController?.pushViewController(followerListVC, animated: true)
+        let resultVC = ResultsVC(newsToSearch: usernameTextField.text!)
+       navigationController?.pushViewController(resultVC, animated: true)
     }
 
 }
