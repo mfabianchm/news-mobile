@@ -12,7 +12,9 @@ class NetworkManager {
     static let shared   = NetworkManager()
     private let baseURL = "https://newsapi.org/v2/"
     private let apiKey = "4f87c701006942e4b92f101683311f25"
-    let decoder         = JSONDecoder()
+    let decoder = JSONDecoder()
+    
+    let cache = NSCache<NSString, UIImage>()
     
     
     private init() {
@@ -54,11 +56,14 @@ class NetworkManager {
     
     
     func downloadImage(from urlString: String) async -> UIImage? {
+        let cacheKey = NSString(string: urlString)
+        if let image = cache.object(forKey: cacheKey) { return image }
         guard let url = URL(string: urlString) else { return nil }
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             guard let image = UIImage(data: data) else { return nil }
+            cache.setObject(image, forKey: cacheKey)
             return image
         } catch {
             return nil

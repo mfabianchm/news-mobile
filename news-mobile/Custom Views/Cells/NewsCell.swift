@@ -31,13 +31,13 @@ class NewsCell: UITableViewCell {
     func set(news: News) {
         newsTitleLabel.text = news.title
         newsDecriptionLabel.text = news.description
-//        print(news.urlToImage)
-//
-//        if(news.urlToImage == nil) {
-//            return
-//        } else {
-//            newsImageView.downloadImage(fromURL: news.urlToImage!)
-//        }
+        
+        guard let imageURL = news.urlToImage else {
+            newsImageView.image = Images.placeholder
+            return
+        }
+        
+        newsImageView.downloadImage(fromURL: imageURL)
       
     }
     
