@@ -28,6 +28,7 @@ class NewsCell: UITableViewCell {
     
     
     func set(news: News) {
+      
         guard let imageURL = news.urlToImage else {
             return
         }

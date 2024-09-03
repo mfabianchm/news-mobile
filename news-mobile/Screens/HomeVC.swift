@@ -98,11 +98,12 @@ class HomeVC: DataLoadingVC {
 
 extension HomeVC: UITableViewDelegate {
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let news = news[indexPath.row]
-//        let nextVC = DetailsVC(news: news)
-//        
-//        navigationController?.pushViewController(nextVC, animated: true)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let news = news[indexPath.row]
+        let nextVC = DetailsVC(news: news)
+        
+        
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
     
 }
