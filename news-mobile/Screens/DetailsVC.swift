@@ -17,6 +17,7 @@ class DetailsVC: UIViewController {
     let imageView = NewsImageView(frame: .zero)
     let authorNameLabel = UILabel()
     let dateLabel = UILabel()
+    let contentLabel = NewsBodyLabel(textAlignment: .left)
     let linkButton = UIButton(type: .roundedRect)
     
     var news: News!
@@ -35,12 +36,7 @@ class DetailsVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         configureScrollView()
-        
-        linkButton.setTitle("Read more...", for: .normal)
-        linkButton.addTarget(self, action: #selector(goToLink), for: .touchUpInside)
-        linkButton.backgroundColor = .systemBlue
-        linkButton.setTitleColor(.white, for: .normal)
-        
+        configureLinkButton()
         layoutUI()
         updateData()
     }
@@ -56,6 +52,13 @@ class DetailsVC: UIViewController {
                  print("Open url : \(success)")
             })
         }
+    }
+    
+    func configureLinkButton() {
+        linkButton.setTitle("Read more...", for: .normal)
+        linkButton.addTarget(self, action: #selector(goToLink), for: .touchUpInside)
+        linkButton.backgroundColor = .systemBlue
+        linkButton.setTitleColor(.white, for: .normal)
     }
     
     func configureViewController() {
@@ -79,6 +82,11 @@ class DetailsVC: UIViewController {
             dateLabel.text = String(dateString.prefix(10))
         }
         
+        if let contentString = news.content {
+            contentLabel.text = String(contentString.prefix(200))
+            contentLabel.numberOfLines = 0
+        }
+        
         titleLabel.text = news.title
         authorNameLabel.text = news.author
         descriptionLabel.text = news.description
@@ -94,7 +102,7 @@ class DetailsVC: UIViewController {
     func layoutUI() {
         let padding: CGFloat    = 20
         
-        itemViews = [titleLabel, descriptionLabel, imageView, authorNameLabel, dateLabel, linkButton]
+        itemViews = [titleLabel, descriptionLabel, imageView, authorNameLabel, dateLabel, linkButton, contentLabel]
         
         for itemView in itemViews {
             contentView.addSubview(itemView)
@@ -118,7 +126,9 @@ class DetailsVC: UIViewController {
 
             descriptionLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 10),
             
-            linkButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
+            contentLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
+            
+            linkButton.topAnchor.constraint(equalTo: contentLabel.bottomAnchor, constant: 10),
             linkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             linkButton.heightAnchor.constraint(equalToConstant: 40),
             
