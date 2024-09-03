@@ -29,6 +29,7 @@
 		58EC75762C8769C500D705F8 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75752C8769C500D705F8 /* ResultsVC.swift */; };
 		58EC757C2C877CEF00D705F8 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC757B2C877CEF00D705F8 /* NewsImageView.swift */; };
 		58FEF9D32C8783A600101FAF /* NewsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF9D22C8783A600101FAF /* NewsEmptyStateView.swift */; };
+		58FEF9D42C87B87D00101FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58EC753E2C86386400D705F8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -285,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58FEF9D42C87B87D00101FAF /* LaunchScreen.storyboard in Resources */,
 				58EC753D2C86386400D705F8 /* Assets.xcassets in Resources */,
 				58EC75402C86386400D705F8 /* Base in Resources */,
 			);
@@ -458,13 +460,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5MNUSUD85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "news-mobile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,13 +488,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H5MNUSUD85;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "news-mobile/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
