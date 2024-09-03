@@ -1,8 +1,8 @@
 //
-//  NewsImageview.swift
+//  NewsImageView.swift
 //  news-mobile
 //
-//  Created by Marcos Fabian Chong Megchun on 02/09/24.
+//  Created by Marcos Fabian Chong Megchun on 03/09/24.
 //
 
 import UIKit
@@ -35,3 +35,4 @@ class NewsImageView: UIImageView {
     }
 
 }
+

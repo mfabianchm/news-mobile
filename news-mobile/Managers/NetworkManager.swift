@@ -36,7 +36,17 @@ class NetworkManager {
         
         do {
             let news = try decoder.decode(Info.self, from: data)
-            return news.articles
+            
+            var filteredNews = news.articles.filter { item in
+                if item.title == "[Removed]" {
+                    return false
+                } else {
+                    return true
+
+                }
+            }
+            
+            return filteredNews
         } catch {
            throw CustomError.invalidData
         }

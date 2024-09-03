@@ -47,7 +47,6 @@ class HomeVC: DataLoadingVC {
     func configureDataSource() {
         dataSource = UITableViewDiffableDataSource<Section, News>(tableView: tableView) { tableView, indexPath, item in
             let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.reuseID, for: indexPath) as! NewsCell
-            print(item)
             cell.set(news: item)
             return cell
         }

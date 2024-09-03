@@ -41,8 +41,8 @@ class DetailsVC: UIViewController {
         linkButton.backgroundColor = .systemBlue
         linkButton.setTitleColor(.white, for: .normal)
         
-        updateData()
         layoutUI()
+        updateData()
     }
     
     @objc func goToLink() {
@@ -79,7 +79,6 @@ class DetailsVC: UIViewController {
         authorNameLabel.text = news.author
         dateLabel.text = news.publishedAt
         descriptionLabel.text = news.description
-        
         
         guard let imageURL = news.urlToImage else {
             return

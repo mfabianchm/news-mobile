@@ -68,11 +68,7 @@ class ResultsVC: DataLoadingVC {
             
         }
     }
-    
-    
-
-    
-    
+        
     func updateUI(with news: [News]) {
         if news.isEmpty {
             print("No news found")
