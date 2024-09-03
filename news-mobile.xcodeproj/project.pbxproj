@@ -28,6 +28,7 @@
 		58EC75742C875D6800D705F8 /* NewsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75732C875D6800D705F8 /* NewsButton.swift */; };
 		58EC75762C8769C500D705F8 /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC75752C8769C500D705F8 /* ResultsVC.swift */; };
 		58EC757C2C877CEF00D705F8 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EC757B2C877CEF00D705F8 /* NewsImageView.swift */; };
+		58FEF9D32C8783A600101FAF /* NewsEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEF9D22C8783A600101FAF /* NewsEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		58EC75732C875D6800D705F8 /* NewsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsButton.swift; sourceTree = "<group>"; };
 		58EC75752C8769C500D705F8 /* ResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
 		58EC757B2C877CEF00D705F8 /* NewsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageView.swift; sourceTree = "<group>"; };
+		58FEF9D22C8783A600101FAF /* NewsEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				58EC756A2C86714300D705F8 /* DataLoadingVC.swift */,
+				58FEF9D22C8783A600101FAF /* NewsEmptyStateView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				58EC755A2C86491000D705F8 /* Error.swift in Sources */,
 				58EC75362C86386200D705F8 /* SceneDelegate.swift in Sources */,
 				58EC75672C8666C400D705F8 /* NewsTitleLabel.swift in Sources */,
+				58FEF9D32C8783A600101FAF /* NewsEmptyStateView.swift in Sources */,
 				58EC75622C865D5200D705F8 /* Constants.swift in Sources */,
 				58EC757C2C877CEF00D705F8 /* NewsImageView.swift in Sources */,
 				58EC75742C875D6800D705F8 /* NewsButton.swift in Sources */,

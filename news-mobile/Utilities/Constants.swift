@@ -10,4 +10,5 @@ import UIKit
 enum Images {
     static let placeholder = UIImage(named: "image-placeholder")
     static let newsLogo = UIImage(named: "news-image-logo")
+    static let notFound = UIImage(named: "file-not-found")
 }

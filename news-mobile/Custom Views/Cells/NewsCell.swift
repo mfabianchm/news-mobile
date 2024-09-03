@@ -10,6 +10,7 @@ import UIKit
 class NewsCell: UITableViewCell {
 
     static let reuseID  = "NewsCell"
+    
     let newsImageView = NewsImageView(frame: .zero)
     let newsTitleLabel = NewsTitleLabel(textAlignment: .left, fontSize: 16)
     let newsDecriptionLabel = NewsBodyLabel(textAlignment: .left)
@@ -31,7 +32,7 @@ class NewsCell: UITableViewCell {
         newsTitleLabel.text = news.title
         newsDecriptionLabel.text = news.description
 //        print(news.urlToImage)
-//        
+//
 //        if(news.urlToImage == nil) {
 //            return
 //        } else {

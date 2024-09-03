@@ -71,7 +71,9 @@ class ResultsVC: DataLoadingVC {
         
     func updateUI(with news: [News]) {
         if news.isEmpty {
-            print("No news found")
+            let message = "Sorry no news found about this topic."
+            DispatchQueue.main.async { self.showEmptyStateView(with: message, in: self.view) }
+            return
         } else  {
             self.news = news
             DispatchQueue.main.async {
