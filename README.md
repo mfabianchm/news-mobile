@@ -1,4 +1,4 @@
-# News Mobile App
+# News Mobile App 📱
 
 ¡Hi! I've created this little app, using the UIKit framework from Swift.
 For this project I decided follow the **MVC** pattern, because is the most used design pattern in iOS development. 
@@ -10,7 +10,9 @@ These are the reasons why I choose MVC Pattern:
  - I have done most of my iOS projects using this pattern.
  - It´s easier to read and understand (not the most ideal) than the MVVM pattern.
 
-# Folder structure
+The news topic that I chose for the app is everything related with Apple News, because I like Apple products a lot 🍎.
+
+# Folder structure 📁​
 The current project follows this folder structure:
 
  - **Support**: Here we can find the core files of our app like AppDelegate, SceneDelegate, Assets and LaunchScreen. These files are responsible for instantiate our app, windows and scenes, implementation of the splash screen and storing the images we are going to use throughout the project.
@@ -22,9 +24,12 @@ The current project follows this folder structure:
  - **Utilities**: Inside of this, you can find all the custom errors used for catch blocks in our app and a constants file where are the different images used in the project.
   - **Extensions**: Implementations of the different extensions.
 
-# Steps to open the project
+# Steps to open the project ✅​
 
  1. Clone the current repo to xcode.
  2. Open the project and you can hit the build button to see the simulator.
  3. In order to see the project properly I reccomend to use an iphone 15 pro as the current device in the simulator. We use iOS 17.5.
+
+# Comments on each commit 💬​
+I added comments on each commit to explain what implementations and changes did in every step ;)
 
